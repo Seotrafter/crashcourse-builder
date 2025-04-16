@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>CrashCourse-Builder – Twórz trasy, rozwalaj, wygrywaj!</title>
+    <meta name="keywords"
+        content="gra wyścigowa, edytor tras, crash course, mobilna gra, wybuchy, kreatywna gra, gra akcji, Android, iOS, polska gra">
+    <meta name="description"
+        content="CrashCourse-Builder to dynamiczna gra mobilna z edytorem tras, szaloną fizyką i trybem wyścigowym. Twórz, ścigaj się i dołącz do społeczności graczy z całego świata!">
+    <link href="../img/ico.webp" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            Używamy plików cookie, aby ulepszyć Twoje wrażenia. Kontynuując, zgadzasz się na naszą
+            <a href="../cookie.html">Polityka Cookie</a> oraz
+            <a href="../terms.html">Zasady i warunki</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies">Akceptuję</button>
+            <button id="decline-cookies">Odrzucam</button>
+        </div>
+    </div>
+
+
+    <div class="container-xxl bg-dark p-0">
+
+        <div class="container-xxl position-relative p-3">
+            <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0 bg-black">
+                <a href="../" class="navbar-brand p-0">
+                    <h1 class="m-0 text-warning">CrashCourse-Builder</h1>
+                </a>
+                <button class="navbar-toggler" type="button" id="menuToggle">
+                    <span class="fa fa-bars text-warning"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="../" class="nav-item nav-link">Strona główna</a>
+                        <a href="../about/" class="nav-item nav-link">O grze</a>
+                        <a href="/" class="nav-item nav-link active">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+         
+        </div>
+
+        <div class="container-xxl py-5 bg-dark text-light" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp text-center" data-wow-delay="0.1s">
+                    <p class="section-title text-warning justify-content-center"><span></span>Skontaktuj się<span></span></p>
+                    <h2 class="mb-5 text-light">Masz pytanie? Napisz do nas!</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <form action="../thankyou.php" method="post">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Twoje imię" required>
+                                            <label style="color: #000;" for="name">Twoje imię</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Twój e-mail" required>
+                                            <label style="color: #000;" for="email">Twój e-mail</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="tel" placeholder="Telefon" required>
+                                            <label style="color: #000;" for="tel">Telefon</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Wpisz wiadomość tutaj" id="message" style="height: 150px" required></textarea>
+                                            <label style="color: #000;" for="message">Wiadomość</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-warning w-100 py-3 fw-bold" type="submit">Wyślij wiadomość</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="container-fluid bg-dark text-light footer wow fadeIn">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Kontakt<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Dantego Alighieri 6, 01-914 Warszawa,Polska</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+48 421 951 280</p>
+                        <p><i class="fa fa-envelope me-3"></i>kontakt@crashcourse-builder.pl</p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Informacje<span></span></p>
+                        <a class="btn btn-link" href="../cookie.html">Polityka Cookie</a>
+                        <a class="btn btn-link" href="../privacy.html">Polityka prywatności</a>
+                        <a class="btn btn-link" href="../terms.html">Zasady i warunki</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Nawigacja<span></span></p>
+                        <a class="btn btn-link" href="../">Strona główna</a>
+                        <a class="btn btn-link " href="../about/">O grze</a>
+                        <a class="btn btn-link " href="/">Kontakt</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            &copy; <a class="border-bottom text-warning" href="../">Crashcourse-builder</a> — Wszelkie
+                            prawa
+                            zastrzeżone.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

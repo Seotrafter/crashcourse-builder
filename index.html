@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>CrashCourse-Builder – Twórz trasy, rozwalaj, wygrywaj!</title>
+    <meta name="keywords"
+        content="gra wyścigowa, edytor tras, crash course, mobilna gra, wybuchy, kreatywna gra, gra akcji, Android, iOS, polska gra">
+    <meta name="description"
+        content="CrashCourse-Builder to dynamiczna gra mobilna z edytorem tras, szaloną fizyką i trybem wyścigowym. Twórz, ścigaj się i dołącz do społeczności graczy z całego świata!">
+    <link href="img/ico.webp" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>
+            Używamy plików cookie, aby ulepszyć Twoje wrażenia. Kontynuując, zgadzasz się na naszą
+            <a href="cookie.html">Polityka Cookie</a> oraz
+            <a href="terms.html">Zasady i warunki</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies">Akceptuję</button>
+            <button id="decline-cookies">Odrzucam</button>
+        </div>
+    </div>
+
+
+    <div class="container-xxl bg-dark p-0">
+
+        <div class="container-xxl position-relative p-3">
+            <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0 bg-black">
+                <a href="/" class="navbar-brand p-0">
+                    <h1 class="m-0 text-warning">CrashCourse-Builder</h1>
+                </a>
+                <button class="navbar-toggler" type="button" id="menuToggle">
+                    <span class="fa fa-bars text-warning"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="/" class="nav-item nav-link active">Strona główna</a>
+                        <a href="about/" class="nav-item nav-link">O grze</a>
+                        <a href="contact/" class="nav-item nav-link">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-xxl bg-dark hero-header py-5">
+                <div class="container px-lg-5">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-warning mb-4 animated slideInDown">Zbuduj trasę. Rozbij wszystko. Powtórz!
+                            </h1>
+                            <p class="text-light pb-3 animated slideInDown">
+                                CrashCourse-Builder to szalona gra wyścigowa z edytorem tras, gdzie liczy się każda
+                                sekunda i każdy skok.
+                                Twórz, ścigaj się i podziel się swoją trasą z graczami na całym świecie!
+                            </p>
+                            <div class="d-flex flex-wrap gap-3 mb-3">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.WombatBrawler.CrashCourse&hl=pl" class="btn btn-warning py-sm-3 px-sm-5 rounded-pill animated slideInLeft">
+                                    <i class="fab fa-google-play me-2"></i>Pobierz z Google Play
+                                </a>
+                                <a target="_blank" href="https://apps.apple.com/pl/app/crash-course-builder/id1569542285" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">
+                                    <i class="fab fa-apple me-2"></i>Pobierz z App Store
+                                </a>
+                            </div>
+                            <div class="text-light mt-3 small">
+                                <p class="mb-1">10 tys.+ pobrań</p>
+                                <p class="mb-1">Ocena treści: sklasyfikowane od 3 lat</p>
+                                <p class="mb-0">📦 Gra darmowa · 🎮 Rozrywka bez końca</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end">
+                            <img class="img-fluid animated zoomIn" src="img/main.jpg" alt="CrashCourse-Builder">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-xxl py-5 bg-dark text-light">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.jpg"
+                            alt="CrashCourse o grze">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp">
+
+                        <p class="section-title text-warning">O grze<span></span></p>
+                        <h1 class="mb-5 text-light">CrashCourse-Builder – twórz, rozwalaj, powtarzaj!</h1>
+                        <p class="mb-4">
+                            To nie tylko gra – to kreatywna piaskownica dla fanów wyścigów, wyzwań i eksplozji! Twórz
+                            własne trasy pełne przeszkód, testuj je w szalonych wyścigach i rzucaj wyzwanie innym
+                            graczom. Ponad 10 000 graczy już z nami – dołącz do społeczności budowniczych chaosu!
+                        </p>
+                        <a href="#download" class="btn btn-warning py-sm-3 px-sm-5 rounded-pill mt-3">Pobierz teraz</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl bg-dark fact py-5 wow fadeInUp">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn">
+                        <i class="fas fa-gamepad fa-3x text-warning mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">120+</h1>
+                        <p class="text-white mb-0">Unikalnych poziomów</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
+                        <i class="fas fa-users fa-3x text-warning mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">10k+</h1>
+                        <p class="text-white mb-0">Pobrań na świecie</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
+                        <i class="fas fa-tools fa-3x text-warning mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">200+</h1>
+                        <p class="text-white mb-0">Elementów w edytorze</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">4.8</h1>
+                        <p class="text-white mb-0">Średnia ocena graczy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5 bg-dark text-light">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp text-center">
+                    <p class="section-title text-warning justify-content-center"><span></span>Tryby i
+                        funkcje<span></span></p>
+                    <h1 class="text-center mb-5 text-light">Co znajdziesz w CrashCourse-Builder</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-hammer fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Edytor tras</h5>
+                            <p class="m-0">Zaprojektuj własne szalone trasy pełne przeszkód, ramp i pułapek.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-rocket fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Tryb wyścigu</h5>
+                            <p class="m-0">Ścigaj się z czasem lub z innymi graczami na najbardziej szalonych torach.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-bomb fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Fizyka i chaos</h5>
+                            <p class="m-0">Eksplozje, zderzenia i totalna rozwałka – czysta frajda i losowość!</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-globe fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Społeczność graczy</h5>
+                            <p class="m-0">Udostępniaj swoje trasy, oceniaj innych i rywalizuj w rankingach.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-mobile-alt fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Gra mobilna</h5>
+                            <p class="m-0">Dostępna na Androida i iOS – graj gdzie chcesz, kiedy chcesz.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded bg-secondary h-100 p-4">
+                            <div class="service-icon flex-shrink-0 mb-3">
+                                <i class="fas fa-medal fa-5x text-dark"></i>
+                            </div>
+                            <h5 class="mb-3">Osiągnięcia</h5>
+                            <p class="m-0">Zdobywaj punkty, odznaki i odblokuj unikalne elementy gry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5 bg-dark text-light" id="screenshots">
+            <div class="container px-lg-5">
+                <div class="text-center mb-5">
+                    <p class="section-title text-warning"><span></span>Zrzuty ekranu<span></span></p>
+                    <h2 class="mb-4 text-light">Wejdź do świata CrashCourse-Builder</h2>
+                    <p>Zobacz emocje, chaos i kreatywność w najpiękniejszych momentach gry!</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="screenshot-box">
+                            <img src="img/s-1.webp" alt="Zrzut ekranu 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="screenshot-box">
+                            <img src="img/s-2.webp" alt="Zrzut ekranu 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="screenshot-box">
+                            <img src="img/s-3.webp" alt="Zrzut ekranu 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5 bg-dark text-light">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <img src="img/why.jpg" alt="Dlaczego grać w CrashCourse-Builder" class="img-fluid rounded">
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInRight">
+                        <p class="section-title text-warning">Dlaczego warto grać<span></span></p>
+                        <h2 class="mb-4 text-light">CrashCourse-Builder to więcej niż gra – to czysty fun i kreatywność!
+                        </h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                Twórz unikalne trasy i dziel się nimi z innymi graczami
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                Przeżyj szalone wyścigi z wybuchami, rampami i zderzeniami
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                Zdobywaj osiągnięcia i odblokowuj nowe elementy
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                Graj gdziekolwiek – dostępna na Androida i iOS
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-check-circle text-warning me-2"></i>
+                                Dołącz do społeczności pełnej kreatywnych graczy
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="download" class="container-xxl py-5 bg-dark text-light">
+            <div class="container py-5 px-lg-5 text-center">
+                <p class="section-title text-warning justify-content-center"><span></span>Pobierz grę<span></span></p>
+                <h2 class="mb-4 text-light">Gotowy na wyścig? CrashCourse-Builder czeka!</h2>
+
+                <div class="mb-4">
+                    <img src="img/download.jpg" alt="CrashCourse-Builder - gameplay" class="img-fluid rounded shadow">
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-4">
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.WombatBrawler.CrashCourse&hl=pl"
+                        class="btn btn-warning py-3 px-4 rounded-pill fw-bold">
+                        <i class="fab fa-google-play me-2"></i>Pobierz z Google Play
+                    </a>
+                    <a target="_blank" href="https://apps.apple.com/pl/app/crash-course-builder/id1569542285" class="btn btn-light py-3 px-4 rounded-pill fw-bold">
+                        <i class="fab fa-apple me-2"></i>Pobierz z App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl py-5 bg-dark text-light wow fadeInUp">
+            <div class="container py-5 px-lg-5">
+                <p class="section-title text-warning justify-content-center"><span></span>Opinie graczy<span></span></p>
+                <h1 class="text-center mb-5 text-light">Co mówią nasi gracze?</h1>
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-secondary rounded p-4 h-100">
+                            <p class="fs-5">
+                                <i class="fa fa-quote-left fa-2x text-warning me-3"></i>
+                                Najlepsza gra z edytorem tras, jaką widziałem! Możliwości są ogromne, a fizyka naprawdę
+                                daje radę.
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 65px; height: 65px;">MK</div>
+                                <div class="ps-4">
+                                    <h5 class="mb-1">Michał K.</h5>
+                                    <span>Gracz i twórca tras</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-secondary rounded p-4 h-100">
+                            <p class="fs-5">
+                                <i class="fa fa-quote-left fa-2x text-warning me-3"></i>
+                                Gra pełna śmiechu i wybuchów! Uwielbiam tryb z czasem – adrenalina gwarantowana!
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 65px; height: 65px;">AN</div>
+                                <div class="ps-4">
+                                    <h5 class="mb-1">Ania N.</h5>
+                                    <span>Fanka zręcznościówek</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-secondary rounded p-4 h-100">
+                            <p class="fs-5">
+                                <i class="fa fa-quote-left fa-2x text-warning me-3"></i>
+                                Edytor jest genialny. Można stworzyć dosłownie wszystko – od prostych ramp po totalne
+                                szaleństwo.
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 65px; height: 65px;">TG</div>
+                                <div class="ps-4">
+                                    <h5 class="mb-1">Tomek G.</h5>
+                                    <span>Konstruktor tras</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="testimonial-item bg-secondary rounded p-4 h-100">
+                            <p class="fs-5">
+                                <i class="fa fa-quote-left fa-2x text-warning me-3"></i>
+                                Gram codziennie z synem – świetna zabawa i kupa śmiechu. Czekamy na kolejne
+                                aktualizacje!
+                            </p>
+                            <div class="d-flex align-items-center mt-4">
+                                <div class="bg-warning text-dark fw-bold rounded-circle d-flex align-items-center justify-content-center"
+                                    style="width: 65px; height: 65px;">JP</div>
+                                <div class="ps-4">
+                                    <h5 class="mb-1">Jan P.</h5>
+                                    <span>Gracz rodzinny</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-dark text-light footer wow fadeIn">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Kontakt<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Dantego Alighieri 6, 01-914 Warszawa,Polska</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+48 421 951 280</p>
+                        <p><i class="fa fa-envelope me-3"></i>kontakt@crashcourse-builder.pl</p>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Informacje<span></span></p>
+                        <a class="btn btn-link" href="cookie.html">Polityka Cookie</a>
+                        <a class="btn btn-link" href="privacy.html">Polityka prywatności</a>
+                        <a class="btn btn-link" href="terms.html">Zasady i warunki</a>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-warning h5 mb-4">Nawigacja<span></span></p>
+                        <a class="btn btn-link" href="/">Strona główna</a>
+                        <a class="btn btn-link " href="about/">O grze</a>
+                        <a class="btn btn-link " href="contact/">Kontakt</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            &copy; <a class="border-bottom text-warning" href="/">Crashcourse-builder</a> — Wszelkie
+                            prawa
+                            zastrzeżone.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
